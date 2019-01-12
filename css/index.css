@@ -1,3 +1,21 @@
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.btn {
+  background-color: #118080;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  max-width: 85%;
+  border-radius: 10%;
+  font-size: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,6 +190,9 @@ img {
   display: flex;
   flex-direction: row;
   border-bottom: 2px dashed lightgrey;
+  max-width: 800px;
+  justify-content: center;
+  text-align: center;
 }
 .navigation h1 {
   display: flex;
@@ -243,4 +264,8 @@ header {
 }
 header h2 {
   margin-top: 20px;
+}
+.mid-section {
+  border-bottom: 2px dashed lightgrey;
+  margin-bottom: 20px;
 }

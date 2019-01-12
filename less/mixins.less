@@ -1,1 +1,16 @@
-// Mixins in here
+.button(@j-content) {
+   background-color: #118080;
+   color: white;
+   display: flex;
+   justify-content: @j-content;
+   align-items: center;
+   height: 45px;
+   max-width: 85%;
+   border-radius: 10%;
+   font-size: 2rem;
+   
+}
+
+.btn {
+    .button(center);
+}
