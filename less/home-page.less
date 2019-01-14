@@ -76,3 +76,26 @@ header {
     border-bottom: 2px dashed lightgrey;
     margin-bottom: 20px;
 }
+
+@media @phone {
+    .mid-section {
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+
+            .text-content {
+                width: 100%;
+            }
+
+            .img-content {
+                width: 100%;
+            }
+        }
+
+        .inverse-content {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
