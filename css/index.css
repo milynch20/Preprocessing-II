@@ -276,29 +276,52 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-header {
+.home header {
   border-bottom: 2px dashed lightgrey;
 }
-header h2 {
+.home header h2 {
   margin-top: 20px;
 }
-.mid-section {
+.home .mid-section {
   border-bottom: 2px dashed lightgrey;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
-  .mid-section .content-section {
+  .home {
+    margin: 0 10px;
+  }
+  .home .mid-section .content-section {
     display: flex;
     flex-direction: column;
   }
-  .mid-section .content-section .text-content {
+  .home .mid-section .content-section .text-content {
     width: 100%;
   }
-  .mid-section .content-section .img-content {
+  .home .mid-section .content-section .img-content {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home .mid-section .content-section .img-content .img-fluid {
     width: 100%;
   }
-  .mid-section .inverse-content {
+  .home .mid-section .inverse-content {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home div .btn {
+    margin: 0;
   }
 }
